@@ -3,7 +3,7 @@ export default function ChooseColor({ selectedColor, setColor }) {
       <div className="bg-green-light flex flex-col items-center p-1">
         <div className="font-mono font-semibold text-lg p-1">I Play as</div>
         <div>
-          <button className={`border-2 border-green-dark rounded-sm bg-white p-1 transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-105 ${
+          <button className={`cursor-pointer border-2 border-green-dark rounded-sm bg-white p-1 transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-105 ${
               selectedColor === "white" ? "ring-2 ring-green-dark" : ""
             }`}
             onClick={() => setColor("white")}>
@@ -45,7 +45,7 @@ export default function ChooseColor({ selectedColor, setColor }) {
               />
             </svg>
           </button>
-          <button className={`ml-6 mr-6 border-2 border-green-dark rounded-sm bg-[conic-gradient(black_0deg_180deg,_white_180deg_360deg)] p-1 transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-105 ${
+          <button className={`cursor-pointer ml-6 mr-6 border-2 border-green-dark rounded-sm bg-[conic-gradient(black_0deg_180deg,_white_180deg_360deg)] p-1 transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-105 ${
               selectedColor === "random" ? "ring-2 ring-green-dark" : ""
             }`}
             onClick={() => setColor("random")}>
@@ -87,7 +87,7 @@ export default function ChooseColor({ selectedColor, setColor }) {
               />
             </svg>
           </button>
-          <button className={`border-2 border-green-dark rounded-sm bg-black p-1 transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-105 ${
+          <button className={`cursor-pointer border-2 border-green-dark rounded-sm bg-black p-1 transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-105 ${
               selectedColor === "black" ? "ring-2 ring-green-dark" : ""
             }`}
             onClick={() => setColor("black")}>
